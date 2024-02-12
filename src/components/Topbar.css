@@ -1,0 +1,15 @@
+@import '../App.css';
+
+.navbar-expand   {
+    background-color: var(--secondary-color);
+}
+
+.navbar-brand{
+    color: #fff;
+    margin: auto;
+}
+
+.navbar-brand:hover{
+    color: var(--main-color);
+    cursor:default;
+}

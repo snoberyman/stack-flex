@@ -1,0 +1,16 @@
+@import '../App.css';
+
+.hero-h1{
+    color: var(--secondary-color2);
+}
+
+.hero-p{
+    font-size: 18px;
+    color: var(--secondary-color2);
+}
+
+@media screen and (max-width: 480px) {
+    .hero-p{
+        font-size: 16px;
+    }
+}
