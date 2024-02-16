@@ -1,14 +1,17 @@
 @import '../App.css';
 
+/* top bar color */
 .navbar-expand   {
     background-color: var(--secondary-color);
 }
 
+/* top bat font color */
 .navbar-brand{
     color: #fff;
     margin: auto;
 }
 
+/* to bar brand hover effect */
 .navbar-brand:hover{
     color: var(--main-color);
     cursor:default;
