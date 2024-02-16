@@ -13,6 +13,6 @@
 
 /* to bar brand hover effect */
 .navbar-brand:hover{
-    color: var(--main-color);
+    color: var(--primary-color);
     cursor:default;
 }
