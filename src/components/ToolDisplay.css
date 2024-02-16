@@ -1,13 +1,23 @@
 @import '../App.css';
 
-/* tool square display */
+/* tool box title */
+.tool-display-title{
+    text-align: center;
+}
+
+/* tool box display */
 .tool-display-card{
     border: 1px solid var(--secondary-color2);
     margin: 10px;
     padding: 10px;
     min-height: 10rem;
-}
+    box-shadow: 0 4px 8px 0 var(--secondary-color2);
 
+}
+    
+
+
+/* for mobile */
 @media screen and (max-width: 480px) {
     .tool-display-card{
         margin: 0px;

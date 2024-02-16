@@ -16,7 +16,7 @@
     color: var(--secondary-color1);
 }
 
-/* behaviour on smaller screen */
+/* for mobile */
 @media screen and (max-width: 480px) {
     .hero-p{
         font-size: 16px;

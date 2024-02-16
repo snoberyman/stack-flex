@@ -10,11 +10,11 @@ function Header() {
             <div className="col-lg-12 text-center">
               {/* main header title */}
               <h1 className="hero-h1">
-                Organize, Visualize and Display Your Tech Stack{" "}
+                Explore Tools, Organize and Visualize Your Tech Stack{" "}
               </h1>
               {/* main header subtitle */}
               <p className="hero-p pb-2">
-                Explore Tools, Streamline and Showcase Your Toolsets Efficiently
+                Plan and Annotate, Streamline and Showcase Your Toolset
               </p>
             </div>
           </div>
