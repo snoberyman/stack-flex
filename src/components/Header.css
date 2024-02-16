@@ -1,16 +1,27 @@
 @import '../App.css';
 
-.hero-h1{
-    color: var(--secondary-color2);
+/* header contianer padding  */
+.header-container{
+    padding: 5rem;
 }
 
+/* header font color */
+.hero-h1{
+    color: var(--secondary-color1);
+}
+
+/* main sub-header font */
 .hero-p{
     font-size: 18px;
-    color: var(--secondary-color2);
+    color: var(--secondary-color1);
 }
 
+/* behaviour on smaller screen */
 @media screen and (max-width: 480px) {
     .hero-p{
         font-size: 16px;
+    }
+    .header-container{
+        padding: 1rem;
     }
 }
