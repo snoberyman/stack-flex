@@ -1,9 +1,24 @@
 // import { useState } from "react";
 import Select from "react-select";
-import { toolOptions, customStyles } from "../Data/toolOptions";
+import { useState } from "react";
+import { customStyles } from "../Data/toolOptions";
 
 // tool select
-function ToolSelect() {
+function ToolSelect({ updateSlected, options, setOptions }) {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  // function to handle selecting from dropdown
+  const handleChange = (selectedOption) => {
+    // update state in Display
+    updateSlected(selectedOption);
+    // empty selected tool
+    setSelectedOption(null);
+    // remove selected tool from the list
+    setOptions(
+      options.filter((option) => option.value !== selectedOption.value)
+    );
+  };
+
   return (
     <>
       <Select
@@ -14,11 +29,14 @@ function ToolSelect() {
         // defaultValue={colourOptions[0]}
         // isDisabled={isDisabled}
         // isLoading={isLoading}
-        isClearable="true"
+        // isClearable="true"
         // isRtl={isRtl}
         isSearchable="true"
         name="Tool"
-        options={toolOptions}
+        key={options.length} // Force re-render when options change
+        value={selectedOption}
+        options={options}
+        onChange={handleChange}
         theme={(theme) => ({
           ...theme,
           borderRadius: 0,
