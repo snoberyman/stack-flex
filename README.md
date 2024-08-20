@@ -1,6 +1,9 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website to organize and visualize tech stacks. Built using React.
+
+![image](https://github.com/user-attachments/assets/baa784ec-0ef0-4d92-8281-20b0ebeb5e05)
+
+
 
 ## Available Scripts
 
